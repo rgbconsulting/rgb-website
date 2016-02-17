@@ -1,0 +1,28 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* website_favicon
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 13:01+0000\n"
+"PO-Revision-Date: 2016-02-16 13:01+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_favicon
+#: view:website.config.settings:website_favicon.favicon_to_web_form_view
+msgid "Favicon"
+msgstr "Favicon"
+
+#. module: website_favicon
+#: code:addons/website_favicon/models/website_config.py:9
+#: field:website.config.settings,favicon:0
+#, python-format
+msgid "Favicon ico"
+msgstr "Icona favicon"
