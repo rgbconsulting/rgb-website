@@ -1,0 +1,17 @@
+<openerp>
+    <data>
+        <!-- Adding salesperson field to existing view -->
+        <record model="ir.ui.view" id="saleperson_website_conf_form_view">
+            <field name="name">website.conf.saleperson.form.view</field>
+            <field name="model">website.config.settings</field>
+            <field name="inherit_id" ref="website.view_website_config_settings"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@string='Social Media']" position="after">
+                    <group string="Webshop">
+                        <field name="salesperson"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
