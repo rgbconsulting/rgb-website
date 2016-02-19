@@ -5,14 +5,11 @@
         <record model="ir.ui.view" id="favicon_to_web_form_view">
             <field name="name">website.config.form.view</field>
             <field name="model">website.config.settings</field>
-            <field name="inherit_id"
-                   ref="website.view_website_config_settings"/>
+            <field name="inherit_id" ref="website.view_website_config_settings"/>
             <field name="arch" type="xml">
-                <xpath expr="//group[@string='Social Media']"
-                       position="before">
+                <xpath expr="//group[@string='Social Media']" position="before">
                     <group string="Favicon">
-                        <field name="favicon" class="oe_avatar"
-                               widget='image'/>
+                        <field name="favicon" class="oe_avatar" widget='image'/>
                     </group>
                 </xpath>
             </field>

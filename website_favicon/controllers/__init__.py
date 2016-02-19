@@ -1,1 +1,3 @@
-from . import fav_controller
+# -*- coding: utf-8 -*-
+
+from . import main

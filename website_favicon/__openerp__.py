@@ -34,8 +34,8 @@
     """,
 
     'data': [
-        'views/favicon.xml',
-        'views/website_config.xml'
+        'views/website_config.xml',
+        'views/website_layout.xml',
     ],
 
 }
