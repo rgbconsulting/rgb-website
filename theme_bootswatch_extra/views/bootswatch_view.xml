@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="theme_bootswatch_extension" model="ir.ui.view">
+            <field name="name">Website Themes Extension</field>
+            <field name="inherit_id" ref="website.themes"/>
+            <field name="arch" type="xml">
+                <xpath expr="////div[6]" position="before">
+                    <div class="col-md-4">
+                        <div class="well text-center">
+                            <div class="image">
+                                <img class="img-responsive"
+                                     src="/theme_bootswatch_extension/static/src/img/bootswatch/darkly_thumbnail.png"
+                                     alt="Darkly"/>
+                            </div>
+                            <div class="options">
+                                <h3>Darkly</h3>
+                                <p>Flatly in night mode</p>
+                                <a class="btn btn-info" href="/website/theme_change?theme_id=website.theme_darkly">
+                                    Apply
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+                <xpath expr="////div[9]" position="before">
+                    <div class="col-md-4">
+                        <div class="well text-center">
+                            <div class="image">
+                                <img class="img-responsive"
+                                     src="/theme_bootswatch_extension/static/src/img/bootswatch/lumen_thumbnail.png"
+                                     alt="Lumen"/>
+                            </div>
+                            <div class="options">
+                                <h3>Lumen</h3>
+                                <p>Light and shadow</p>
+                                <a class="btn btn-info" href="/website/theme_change?theme_id=website.theme_lumen">
+                                    Apply
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="well text-center">
+                            <div class="image">
+                                <img class="img-responsive"
+                                     src="/theme_bootswatch_extension/static/src/img/bootswatch/paper_thumbnail.png"
+                                     alt="Paper"/>
+                            </div>
+                            <div class="options">
+                                <h3>Paper</h3>
+                                <p>Material is the metaphor</p>
+                                <a class="btn btn-info" href="/website/theme_change?theme_id=website.theme_paper">
+                                    Apply
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+                <xpath expr="////div[12]" position="before">
+                    <div class="col-md-4">
+                        <div class="well text-center">
+                            <div class="image">
+                                <img class="img-responsive"
+                                     src="/theme_bootswatch_extension/static/src/img/bootswatch/sandstone_thumbnail.png"
+                                     alt="Sandstone"/>
+                            </div>
+                            <div class="options">
+                                <h3>Sandstone</h3>
+                                <p>A touch of warmth</p>
+                                <a class="btn btn-info" href="/website/theme_change?theme_id=website.theme_sandstone">
+                                    Apply
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+                <xpath expr="////div[16]" position="before">
+                    <div class="col-md-4">
+                        <div class="well text-center">
+                            <div class="image">
+                                <img class="img-responsive"
+                                     src="/theme_bootswatch_extension/static/src/img/bootswatch/superhero_thumbnail.png"
+                                     alt="Superhero"/>
+                            </div>
+                            <div class="options">
+                                <h3>Superhero</h3>
+                                <p>The brave and the blue</p>
+                                <a class="btn btn-info" href="/website/theme_change?theme_id=website.theme_superhero">
+                                    Apply
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <template id="website.theme_darkly" name="Darkly" inherit_id="website.theme">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href='/theme_bootswatch_extension/static/src/css/bootswatch-darkly.min.css'
+                      t-ignore="true"/>
+            </xpath>
+        </template>
+
+        <template id="website.theme_lumen" name="Lumen" inherit_id="website.theme">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href='/theme_bootswatch_extension/static/src/css/bootswatch-lumen.min.css'
+                      t-ignore="true"/>
+            </xpath>
+        </template>
+
+        <template id="website.theme_paper" name="Paper" inherit_id="website.theme">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href='/theme_bootswatch_extension/static/src/css/bootswatch-paper.min.css'
+                      t-ignore="true"/>
+            </xpath>
+        </template>
+
+        <template id="website.theme_sandstone" name="Sandstone" inherit_id="website.theme">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href='/theme_bootswatch_extension/static/src/css/bootswatch-sandstone.min.css'
+                      t-ignore="true"/>
+            </xpath>
+        </template>
+
+        <template id="website.theme_superhero" name="Superhero" inherit_id="website.theme">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href='/theme_bootswatch_extension/static/src/css/bootswatch-superhero.min.css'
+                      t-ignore="true"/>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>
