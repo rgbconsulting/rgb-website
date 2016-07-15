@@ -20,7 +20,7 @@
 ##############################################################################
 {
     'name': 'RGB Bootswatch Themes',
-    'version': '1.0',
+    'version': '2.0',
     'depends': ['website'],
     'license': 'AGPL-3',
     'author': "RGB Consulting SL",
